@@ -1,0 +1,308 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #25282c;
+}
+
+.header {
+  width: 100%;
+  padding: 21px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #25282cf6;
+  border-bottom: 1px solid white;
+}
+
+.wrapper {
+  max-width: 905px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.search {
+  width: 235px;
+  padding: 9px;
+  font-size: 15px;
+  border: none;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.form {
+  display: flex;
+  align-items: stretch;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.form button {
+  width: 100%;
+  border: none;
+  padding: 0 9px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  background-color: #007bff;
+}
+
+.add {
+  border-radius: 3px;
+  border: none;
+  padding: 0 5px;
+  font-size: 15px;
+  color: white;
+  background-color: #007bff;
+}
+.content {
+  width: 100%;
+  padding-top: 95px;
+}
+
+.content__itm {
+  max-width: 1225px;
+  margin: 0 auto;
+}
+
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tbody {
+  border: 5px;
+}
+
+td, th {
+  height: 45px;
+  border: 1px solid #dddddd;
+  text-align: left;
+  color: white;
+  padding: 0 9px;
+}
+
+tr:nth-child(even) {
+  background-color: #17212b;
+}
+
+
+// .name {
+//   width: 135px;
+// }
+
+// .age {
+//   width: 25px;
+// }
+
+// .surname {
+//   width: 105px;
+// }
+
+// .course {
+//   width: 95px;
+// }
+
+// .phone {
+//   width:135px;
+// }
+
+
+
+
+
+
+
+.adduser {
+  width:100%;
+  border-bottom: 1px solid white;
+}
+
+.adduser__header {
+  max-width: 895px;
+  padding: 15px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  select {
+    padding: 5px 9px;
+  }
+}
+
+.select:focus{
+  outline: none;
+}
+
+.select {
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.select>option {
+  font-size: 17px;
+}
+
+.mode {
+  background-color: white;
+  border-radius: 3px;
+  border: none;
+  padding:0 9px;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.birnima {
+  font-size: 25px;
+  color:white;
+  font-weight: 600;
+  cursor: pointer;
+  span {
+    color: #007bff;
+  }
+}
+
+
+
+
+
+.create__section {
+  max-width: 895px;
+  margin: 0 auto;
+  padding-top: 55px;
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      label {
+        color: white;
+      }
+      input {
+        margin-top: 9px;
+        padding: 7px 3px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Quicksand',sans-serif;
+        color: rgb(24, 24, 24);
+        &:focus{
+          outline: none;
+        }
+      }
+
+    }
+  }
+}
+
+.userAddbutton {
+  margin-top: 35px;
+  padding: 5px 11px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delBtn {
+  color: white;
+  padding: 3px 7px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Quicksand',sans-serif;
+  background-color: #dc3545;
+}
+
+.editBtn {
+  color: white;
+  background-color: #007bff;
+  padding: 3px 7px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Quicksand',sans-serif;
+
+}
+
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(14, 13, 13, 0.555);
+  display: flex;
+  padding-top: 195px;
+  justify-content: center;
+  .modalBox {
+    max-width: 275px !important;
+    width: 100%;
+    height: 155px;
+    padding: 25px 35px;
+    background-color: white;
+    text-align: center;
+    border-radius: 9px;
+    .modalBtn {
+      width: 100%;
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        width: 55px;
+        padding: 5px;
+        color: white;
+        border: none;
+        font-family: 'Quicksand',sans-serif;
+        border-radius: 5px;
+        margin: 0 9px;
+        font-weight: 600;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        transition: 0.4s ease;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+      }
+      .blue {
+        background-color: #007bff;
+      }
+      .red {
+        background-color: #dc3545;
+      }
+    }
+  }
+}
